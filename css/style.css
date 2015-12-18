@@ -1,0 +1,365 @@
+@font-face {
+    font-family: MyriadPro-Bold;
+    src: url('./fonts/MyriadPro-Bold.otf');
+}
+div#container {
+    width:1200px;
+    margin:0 auto;
+}
+
+/*header part*/
+div#header {
+    height:656px;
+    background-color:gray;
+}
+div#bottom_part {
+    height:500px;
+    background-color:blue;
+}
+div#top_bar {
+    height:52px;
+    width:1200px;
+    opacity:0.8;
+    background-color:black;
+    overflow:hidden;
+}
+img#search_logo{
+    float: right;
+    margin: 14px 15px 13px 17px;
+    display: inline-block;
+}
+span#search {
+    width: 173px;
+    margin-top: 10px;
+    float: right;
+    height: 42px;
+}
+#search img {
+    position: relative;
+    bottom: 24px;
+    left: 50px;
+    margin: 0;
+    display: inline-block;
+    line-height: 31px;
+    opacity: 0.5;
+}
+#search input {
+    border: 0;
+    margin-right: 0;
+    height:31px;
+    width:98px;
+    opacity:0.25;
+    border-radius:5px;
+    display:inline-block;
+    padding-left: 75px;
+    font-family: MyriadPro-Bold;
+    font-size: 19px;
+}
+input::-webkit-input-placeholder {
+    opacity: 0.55;
+    font-family: MyriadPro-Bold;
+    font-size: 19px;
+}
+img#logo {
+    float:left;
+    height: 43px;
+    width: 79px;
+}
+img#login {
+    float: right;
+    margin:auto 17px 13px 15px;
+}
+ul.bar_menu {
+    float:left;
+    margin-left: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    width: 190px;
+    height: 52px;
+    list-style-type: none;
+    font-size: 19px;
+    display: block;
+}
+.bar_menu li {
+    float:left;
+    margin:0;
+    width:95px;
+    height: 52px;
+    display: block;
+}
+.bar_menu li:hover{
+    background-color: grey;
+}
+.bar_menu a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    width: 95px;
+    font-family: MyriadPro-Bold;
+    height: auto;
+    padding-top: 15px;
+    display: block;
+}
+
+/*main part*/
+div#main {
+    background-color:white;
+}
+div#recommendation {
+    height: 586px;
+}
+#recommendation p {
+    width: 243px;
+    margin-top: 22px;
+}
+.headline {
+    float:left;
+    margin-bottom: 0;
+    height: 46px;
+    background-color: #f15024;
+    margin-left: 193px;
+    font-size: 28px;
+    line-height: 46px;
+    text-align: center;
+    color: white;
+    font-family: MyriadPro-Bold;
+}
+#first_more_icon img{
+    margin-top: 22px;
+}
+img#big_picture {
+    float:left;
+    margin-top: 18px;
+    margin-left: 193px;
+    width: 417px;
+    height: 417px;
+    display: block;
+}
+img.more_icon {
+    float: right;
+    margin-right: 193px;
+    width: 48px;
+    height: 48px;
+    display: block;
+}
+img.more_icon:hover {
+    opacity:0.7;
+}
+ul#main_pictures {
+    padding: 0;
+    list-style-type: none;
+    height: 498px;
+    width: 394px;
+    float: right;
+    margin-top: 18px;
+    margin-bottom: 0;
+    margin-right: 162px;
+}
+#main_pictures li {
+    display: block;
+    width: 168px;
+    height: 244px;
+    margin-right: 29px;
+    padding: 0;
+    float: left;
+    text-align: center;
+}
+.pic_name {
+    font-family: MyriadPro-Bold;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 12px;
+    color: #121212;
+    width: 168px;
+    margin-right: 29px;
+    display: block;
+}
+.pic_add {
+    font-family: MyriadPro-Bold;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 6px;
+    color: #868686;
+    width: 168px;
+    margin-right: 29px;
+    display: block;
+}
+#radio {
+    height: 463px;
+}
+#radio p{
+    margin-top: 0;
+    width: 98px;
+}
+ul.radio_list {
+    float: left;
+    width: 862px;
+    margin-left: 193px;
+    list-style-type: none;
+    padding: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+.radio_list li {
+    float: left;
+    display: inline-block;
+    margin-right: 47px;
+    margin-bottom: 25px;
+    width: 168px;
+    height: 168px;
+}
+.radio_list img {
+    width: 168px;
+    height: 168px;
+}
+.radio_list img:hover {
+    width: 172px;
+    height: 172px;
+}
+.radio_list span {
+    position: relative;
+    bottom: 94px;
+    text-align: center;
+    display: block;
+    width: 168px;
+    font-family: MyriadPro-Bold;
+    color: white;
+    font-size: 25px;
+}
+#hotest {
+    height: 825px;
+}
+#hotest p {
+    margin-top: 0;
+    width: 113px;
+}
+div.top_list {
+    height: 370px;
+    width: 815px;
+    margin-left: 193px;
+    display: block;
+    float: left;
+    margin-top: 18px;
+}
+ul.songs_list {
+    list-style-type: none;
+    background-color: #202020;
+    width: 212px;
+    height: 324px;
+    float: left;
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+.songs_list li {
+    display: block;
+    height: 55px;
+    width: 212px;
+    border-bottom: 2px black solid;
+}
+.songs_list img {
+    opacity: 0.8;
+    margin: 4px;
+}
+.songs_list a {
+    float: left;
+    margin: 7px 5px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: black;
+}
+.songs_list span {
+    color: white;
+    font-family: MyriadPro-Bold;
+}
+span.number {
+    float: left;
+    text-align: center;
+    margin: 0;
+    display: table;
+    font-size: 62px;
+    width: 50px;
+    padding-top: 7px;
+    line-height: 50px;
+}
+span.list_headline {
+    font-size: 25px;
+    float: left;
+    width: 162px;
+    padding-top: 7px;
+    line-height: 22px;
+}
+span.top_num {
+    float: left;
+    padding-top: 4px;
+    text-align: right;
+    width: 130px;
+}
+li.load_more {
+    height: 41px;
+    width: 212px;
+    border: 0;
+}
+span.songs_name {
+    width: 162px;
+    padding-top: 5px;
+    font-size: 17px;
+    float: left;
+}
+span.singer_name {
+    padding-top: 6px;
+    color: #aaaaaa;
+    font-size: 14px;
+    float: left;
+}
+.load_more span {
+    padding: 0;
+    line-height: 41px;
+    text-align: center;
+    display: block;
+    width: 212px;
+    background-color: #202020;
+}
+.load_more a {
+    border-radius: 0;
+    margin: 0;
+}
+div.pointer {
+    margin-left: 5px;
+    position: relative;
+    top: 78px;
+    border-color: transparent #505050 transparent transparent;
+    border-style: dashed solid dashed dashed;
+    border-width: 9px 13px 9px 0;
+    width: 0;
+    height: 0;
+    float: left;
+}
+div.music_main {
+    width: 584px;
+    height: 324px;
+    background-color: #505050;
+    float: left;
+}
+
+/*bottom_part*/
+div#bottom_part {
+    height:365px;
+    background-color:#202020;
+}
+#bottom_part div {
+    display: inline-block;
+    margin-left: 40px;
+    margin-right: 0;
+    margin-top: 50px;
+    height: 315px;
+    width: 140px;
+    font-family: MyriadPro-Bold;
+    color: #aaaaaa;
+}
+#bottom_part hr {
+    color: #202020;
+}
