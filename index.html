@@ -1,25 +1,40 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
 <head>
     <link rel="stylesheet" type="text/css" href="./css/style.css"/>
+    <script type="text/javascript" src="./js/script.js"></script>
 </head>
 <html>
-    <body style="background-color: black; margin:0 auto">
+    <body onload="carousal_start()">
         <div id="container">
             <div id="header">
                 <div id="top_bar">
-                    <img id="logo" src="./icon/LOGO%20.png" alt="LOGO"/>
+                    <img id="logo" src="./icon/LOGO%20.png"/>
                     <ul class="bar_menu">
                         <li><a>discover</a></li>
                         <li><a>my music</a></li>
+                        <li id="dot"><a>...</a></li>
                     </ul>
                     <img id="search_logo" src="./icon/login%20icon.png"/>
                     <span id="search">
                         <input type="text" placeholder="search"/>
-                        <img  src="./icon/search%20icon%20.png"/>
+                        <img src="./icon/search%20icon%20.png"/>
                     </span>
                 </div>
                 <div id="carousal">
-
+                    <div id="button_left" onclick="last_picture()">
+                        <span class="arrow"><</span>
+                    </div>
+                    <div id="button_right" onclick="next_picture()">
+                        <span class="arrow">></span>
+                    </div>
+                    <ul class="node_list">
+                        <li id="node_big"></li>
+                        <li id="node_1" onclick="click_circle(0)"></li>
+                        <li id="node_2" onclick="click_circle(1)"></li>
+                        <li id="node_3" onclick="click_circle(2)"></li>
+                        <li id="node_4" onclick="click_circle(3)"></li>
+                        <li id="node_5" onclick="click_circle(4)"></li>
+                    </ul>
                 </div>
             </div>
             <div id="main">
@@ -123,7 +138,72 @@
                             </li>
                         </ul>
                         <div class="pointer"></div>
-                        <div class="music_main"></div>
+                        <div class="music_main">
+                            <div class="music_surface">
+                                <img src="./picture/1%20-%20Assistor.jpg"/>
+                                <div class="cover">
+                                </div>
+                            </div>
+                            <div class="music_info">
+                                <img src="./icon/download%20icon.png"/>
+                                <img src="./icon/volume%20icon.png"/>
+                                <span class="songs_title">See You Again</span>
+                                <span class="songs_information">
+                                    Singer:Wiz Khalifa;Clarlie Puth
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    Special:Fast & Furious
+                                </span>
+                                <span class="music_hr"></span>
+                            </div>
+                            <div class="lyric">
+                                It's been a long day without you my friend<br/>
+                                And I'll tell you all about it when I see you again<br/>
+                                We've come a long way from where we began<br/>
+                                Oh I'll tell you all about it when I see you again<br/>
+                                When I see you again<br/>
+                                Damn, who knew all the planes we flew<br/>
+                                Good things we've been through<br/>
+                                That I'll be standing right here<br/>
+                                Talking to you about another path<br/>
+                                I know we loved to hit the road and laugh<br/>
+                                But something told me that it wouldn't last<br/>
+                                Had to switch up look at things different see the bigger picture<br/>
+                                Those were the days hard work forever pays<br/>
+                                Now I see you win the better place<br/>
+                                How could we not talk about family when family's all that we got?<br/>
+                                Everything I went through you were standing there by my side<br/>
+                                And now you gonna be with me for the last ride<br/>
+                                It's been a long day without you my friend<br/>
+                                And I'll tell you all about it when I see you again<br/>
+                                We've come a long way from where we began<br/>
+                                Oh I'll tell you all about it when I see you again<br/>
+                                When I see you again<br/>
+                                First you both go out your way<br/>
+                                And the vibe is feeling strong<br/>
+                                and what's small turn to a friendship<br/>
+                                Turn into a bond and that bond will<br/>
+                                never be broken and the love will never get lost<br/>
+                                And when brotherhood come first then the line<br/>
+                                Will never be crossed established it on our own<br/>
+                                When that line had to be drawn and that line is what<br/>
+                                We reach so remember me when I'm gone<br/>
+                                How could we not talk about family<br/>
+                                when family's all that we got?<br/>
+                                Everything I went through you were standing there by my side<br/>
+                                And now you gonna be with me for the last ride<br/>
+                                So let the light guide your way<br/>
+                                Hold every memory as you go<br/>
+                                And every road you take will always lead you home<br/>
+                                Hoo~<br/>
+                                It's been a long day without you my friend<br/>
+                                And I'll tell you all about it when I see you again<br/>
+                                We've come a long way from where we began<br/>
+                                Oh I'll tell you all about it when I see you again<br/>
+                                When I see you again<br/>
+                                When I see you again, see you again<br/>
+                                When I see you again<br/>
+                            </div>
+                        </div>
                     </div>
                     <div class="top_list">
                         <ul class="songs_list">
@@ -157,29 +237,147 @@
                             </li>
                         </ul>
                         <div class="pointer"></div>
-                        <div class="music_main"></div>
+                        <div class="music_main">
+                            <div class="music_surface">
+                                <img src="./picture/2%20-%20Assistor.jpg"/>
+                                <div class="cover">
+                                </div>
+                            </div>
+                            <div class="music_info">
+                                <img src="./icon/download%20icon.png"/>
+                                <img src="./icon/volume%20icon.png"/>
+                                <span class="songs_title">Adele Laurie Blue Adkins</span>
+                                <span class="songs_information">Style:Soul; Jazz</span>
+                                <span class="music_hr"></span>
+                            </div>
+                            <div class="lyric">
+                                <ul id="hot_singer_song">
+                                    <li>
+                                        <span class="hot_singer_name">1 &nbsp;Hello</span>
+                                        <span class="hot_song_name">MUsic Sounds Better Fund...</span>
+                                        <img src="./icon/earpod%20icon.png"/>
+                                    </li>
+                                    <li>
+                                        <span class="hot_singer_name">2 &nbsp;Rolling</span>
+                                        <span class="hot_song_name">In The Deep Rolling In Th...</span>
+                                        <img src="./icon/earpod%20icon.png"/>
+                                    </li>
+                                    <li>
+                                        <span class="hot_singer_name">3 &nbsp;Rolling</span>
+                                        <span class="hot_song_name">In The Deepp 21</span>
+                                        <img src="./icon/earpod%20icon.png"/>
+                                    </li>
+                                    <li>
+                                        <span class="hot_singer_name">4 &nbsp;Someone</span>
+                                        <span class="hot_song_name">Like You The Brit Awards...</span>
+                                        <img src="./icon/earpod%20icon.png"/>
+                                    </li>
+                                    <li>
+                                        <span class="hot_singer_name">5 &nbsp;Someone</span>
+                                        <span class="hot_song_name">Like You 21</span>
+                                        <img src="./icon/earpod%20icon.png"/>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div id="bottom_part">
+            <div id="footer">
                 <div>
-                    <span>TOP SINGERS</span>
+                    <span class="footer_headline">TOP SINGERS</span>
+                    <span class="line"></span>
+                    <span class="name_list">
+                        Shreya Ghoshal<br/>
+                        A.R.Rahman<br/>
+                        Kishoro Kumar<br/>
+                        Atif Aslam <br/>
+                        Rahat Fateh Ali Khan<br/>
+                        Anirudh Ravichander<br/>
+                        Kanika Kapoor<br/>
+                        Shankar Mahadevan<br/>
+                        Hariharan<br/>
+                    </span>
+                    <span></span>
                 </div>
                 <div>
-                    <span>LANGUAGES<hr/></span>
+                    <span class="footer_headline">LANGUAGES</span>
+                    <span class="line"></span>
+                    <span class="name_list">
+                        Hindi<br/>
+                        English<br/>
+                        Tamil<br/>
+                        Telugu<br/>
+                        Punjabi<br/>
+                        Marathi<br/>
+                        Gujarati<br/>
+                        Bengali<br/>
+                        Kannada<br/>
+                        Bhojpuri<br/>
+                        Malayalam<br/>
+                    </span>
                 </div>
                 <div>
-                    <span>COMPANY</span>
+                    <span class="footer_headline">COMPANY</span>
+                    <span class="line"></span>
+                    <span class="name_list">
+                        About Us<br/>
+                        Blog<br/>
+                        Jobs<br/>
+                        Advertise<br/>
+                        Term & Privacy<br/>
+                        Help & Support<br/>
+                    </span>
+                    <span class="line"></span>
                 </div>
                 <div>
-                    <span>PRODUCTS</span>
+                    <span class="footer_headline">PRODUCTS</span>
+                    <span class="line"></span>
+                    <span class="name_list">
+                        Playmuzik Pro <br/>
+                        Playmuzik for iOS<br/>
+                        Playmuzik for Android<br/>
+                        Playmuzik for WAP<br/>
+                        Playmuzik Firefox Sidebar<br/>
+                    </span>
+                    <span class="line"></span>
                 </div>
                 <div>
-                    <span>FOLLOW US</span>
+                    <span class="footer_headline">FOLLOW US</span>
+                    <span class="line"></span>
+                    <span class="name_list" id="icon_list">
+                        <img src="./icon/facebook.png"/>
+                        <img src="./icon/twitter.png"/>
+                        <img src="./icon/instagram.png"/>
+                        <img src="./icon/google-plus.png"/>
+                    </span>
+                    <span class="line"></span>
                 </div>
                 <div>
-                    <span>CONTACT US</span>
+                    <span class="footer_headline">CONTACT US</span>
+                    <span class="line"></span>
+                    <span class="name_list">
+                        Twitter<br/>
+                        Facebook<br/>
+                        YouTube<br/>
+                        Google+<br/>
+                        Instagram<br/>
+                    </span>
+                    <span class="line"></span>
                 </div>
+                <div id="search_land">
+                    <input id="footer_search" type="text" placeholder="SUBSCRIBE TO NEWSLETTER"/>
+                    <div id="search_button">
+                        <span id="arrow_right_1">-</span>
+                        <span id="arrow_right_2">></span>
+                        <span id="arrow_right_3">-</span>
+                        <span id="arrow_right_4">-</span>
+                    </div>
+                </div>
+            </div>
+            <div id="audio_bottom">
+                <audio id="aud" src="./audio/1.mp3" preload="load"></audio>
+                <div></div>
             </div>
         </div>
     </body>
